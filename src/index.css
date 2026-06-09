@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #080c14;
+  --surf:    rgba(13, 26, 46, 0.82);
+  --surf2:   rgba(6, 10, 18, 0.92);
+  --border:  rgba(56, 189, 248, 0.17);
+  --borderH: rgba(56, 189, 248, 0.44);
+  --sky:     #38bdf8;
+  --violet:  #818cf8;
+  --green:   #4ade80;
+  --orange:  #fb923c;
+  --red:     #f87171;
+  --yellow:  #fbbf24;
+  --t1: #e2e8f0;
+  --t2: rgba(148, 163, 184, 0.78);
+  --t3: rgba(148, 163, 184, 0.40);
+  --mono: 'Space Mono', monospace;
+  --sans: 'Space Grotesk', sans-serif;
+  --radius: 13px;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--t1);
+  min-height: 100vh;
+}
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+input, select, button, textarea { font-family: var(--sans); }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: rgba(56,189,248,0.22); border-radius: 4px; }
