@@ -20,7 +20,7 @@ const Header = ({ addTodo, loading }) => {
         <input
           className="sp-input"
           type="text"
-          placeholder="Mission name..."
+          placeholder="MISSION NAME -"
           value={todoName}
           onChange={(e) => setTodoName(e.target.value)}
           onKeyDown={handleKey}
@@ -28,7 +28,7 @@ const Header = ({ addTodo, loading }) => {
         <input
           className="sp-input"
           type="text"
-          placeholder="Mission objective (optional)..."
+          placeholder="MISSION OBJECTIVE -"
           value={todoDesc}
           onChange={(e) => setTodoDesc(e.target.value)}
           onKeyDown={handleKey}
