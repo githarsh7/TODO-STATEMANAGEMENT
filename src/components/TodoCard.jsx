@@ -63,7 +63,7 @@ const TodoCard = ({ todo, updateStatus, editTodo, deleteTodo }) => {
                 className="edit-input"
                 value={editName}
                 onChange={(e) => setEditName(e.target.value)}
-                placeholder="Mission name"
+                placeholder="Mission name -"
                 onKeyDown={(e) => e.key === 'Enter' && handleSave()}
                 autoFocus
               />
@@ -71,7 +71,7 @@ const TodoCard = ({ todo, updateStatus, editTodo, deleteTodo }) => {
                 className="edit-input"
                 value={editDesc}
                 onChange={(e) => setEditDesc(e.target.value)}
-                placeholder="Mission objective"
+                placeholder="Mission objective -"
                 onKeyDown={(e) => e.key === 'Enter' && handleSave()}
               />
             </div>
